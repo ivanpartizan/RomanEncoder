@@ -41,7 +41,8 @@ label {
   margin-bottom: 2.5%;
 }
 
-input[type="number"] {
+input[type="number"],
+input[type="text"] {
   font-family: "Belgrano", serif;
   border: none;
   outline: none;
@@ -51,7 +52,8 @@ input[type="number"] {
   margin-bottom: 5%;
 }
 
-.output {
+.output,
+.numberOutput {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
