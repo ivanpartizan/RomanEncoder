@@ -66,6 +66,7 @@ const convertFromRoman = (text) => {
     }
   }
   if (number !== number) return `Not a valid Roman numeral`;
+  if (number === 0) return ``;
   return number;
 };
 
@@ -73,6 +74,6 @@ input.addEventListener("keyup", function () {
   output.innerHTML = convertToRoman(input.value);
 });
 
-romanInput.addEventListener("keyup", function () {
+romanInput.addEventListener("keyup", function (e) {
   numberOutput.innerHTML = convertFromRoman(romanInput.value);
 });
