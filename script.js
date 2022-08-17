@@ -77,3 +77,54 @@ input.addEventListener("keyup", function () {
 romanInput.addEventListener("keyup", function (e) {
   numberOutput.innerHTML = convertFromRoman(romanInput.value);
 });
+
+// GSAP
+const tl = gsap.timeline({
+  defaults: { duration: 1, ease: "power1.out" },
+});
+tl.fromTo(".skillIcons", { scale: 0 }, { scale: 1, delay: 5 });
+tl.fromTo(
+  ".icon1",
+  { opacity: 0, x: -50, rotation: "-90deg" },
+  { opacity: 1, x: 0, rotation: "0deg" }
+);
+tl.fromTo(
+  ".icon2",
+  { opacity: 0, x: -50, rotation: "-90deg" },
+  { opacity: 1, x: 0, rotation: "0deg" }
+);
+tl.fromTo(
+  ".icon3",
+  { opacity: 0, x: -50, rotation: "-90deg" },
+  { opacity: 1, x: 0, rotation: "0deg" }
+);
+tl.fromTo(
+  ".icon4",
+  { opacity: 0, x: -50, rotation: "-90deg" },
+  { opacity: 1, x: 0, rotation: "0deg" }
+);
+tl.fromTo(
+  ".icon5",
+  { opacity: 0, x: -50, rotation: "-90deg" },
+  { opacity: 1, x: 0, rotation: "0deg" }
+);
+tl.fromTo(
+  ".icon6",
+  { opacity: 0, x: 50, rotation: "-90deg" },
+  { opacity: 1, x: 0, rotation: "0deg" }
+);
+tl.fromTo(
+  ".icon7",
+  { opacity: 0, x: 50, rotation: "-90deg" },
+  { opacity: 1, x: 0, rotation: "0deg" }
+);
+tl.fromTo(
+  ".icon8",
+  { opacity: 0, x: 50, rotation: "-90deg" },
+  { opacity: 1, x: 0, rotation: "0deg" }
+);
+tl.fromTo(
+  ".icon9",
+  { opacity: 0, x: -50, rotation: "-90deg" },
+  { opacity: 1, x: 0, rotation: "0deg" }
+);
